@@ -460,13 +460,7 @@ main {
 
 .projects {
     padding: 10px;
-}
-
-.projects ul {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
 }
 
 .projects ul li {
@@ -480,6 +474,8 @@ main {
     width: 280px;
     height: auto;
     padding: 16px 16px 20px;
+    margin-right: 20px;
+    flex-shrink: 0;
 }
 
 .projects li::before {
@@ -573,6 +569,29 @@ main {
 
 .projects ul li:hover .card-link-icon {
     color: #8257E6;
+}
+
+.carrossel-track-wrapper {
+    overflow: hidden;
+    position: relative;
+    /* Efeito de desvanecer nas laterais */
+    -webkit-mask-image: linear-gradient(to right,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%);
+    mask-image: linear-gradient(to right,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%);
+}
+
+.carrossel-track {
+    display: flex;
+    width: max-content;
+    list-style: none;
+    padding: 10px 0;
 }
 
 /* RESPONSIVO */
