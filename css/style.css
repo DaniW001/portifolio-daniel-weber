@@ -211,25 +211,27 @@ header .navegacao li a:hover::after {
     }
 }
 
-/* SEÇÃO SOBRE MIM */
+/* ==== CSS MAIN SECTIONS */
 
 main {
     background-color: #090912;
     padding: 40px;
 }
 
-main .container-sections {
+.container-sections {
     background-color: #0f0f1e;
     border: 1px solid #434458;
     border-radius: 10px;
 }
 
-main .sobre {
+/* ==== SEÇÃO SOBRE MIM ==== */
+
+.sobre {
     padding: 40px;
+    border-bottom: 1px solid #434458;
 }
 
 .sobre-container {
-    grid-column: 2/-1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -246,7 +248,7 @@ main .sobre {
 .sobre-titulo div {
     justify-self: start;
     padding: 10px;
-    border: 1px solid #1A1B2E;
+    border: 1px solid #434458;
     background-color: #13131F;
     border-radius: 10px;
 }
@@ -270,7 +272,7 @@ main .sobre {
 .sobre-info {
     justify-self: start;
     padding: 30px;
-    border: 1px solid #1A1B2E;
+    border: 1px solid #434458;
     background-color: #13131F;
     border-radius: 10px;
 }
@@ -296,6 +298,109 @@ main .sobre {
 
 .sobre-info i {
     color: #A40EE4;
+}
+
+/* ==== SEÇÃO FORMAÇÃO ==== */
+
+.formacao {
+    padding: 40px;
+    border-bottom: 1px solid #434458;
+}
+
+.formacao-container {
+    padding: 10px;
+}
+
+.formacao-titulo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.formacao-titulo div {
+    justify-self: start;
+    padding: 10px;
+    border: 1px solid #434458;
+    background-color: #13131F;
+    border-radius: 10px;
+}
+
+.formacao-titulo i {
+    color: #A40EE4;
+    font-size: 25px;
+}
+
+.formacao-titulo h1 {
+    font-size: 25px;
+    color: #FFFFFF;
+    justify-self: start;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  overflow-x: auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #A40EE4, transparent);
+}
+
+.timeline-item {
+  position: relative;
+  flex: 1;
+  min-width: 220px;
+  padding-top: 40px;
+  padding-right: 24px;
+  margin-left: 5px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #A40EE4;
+  border: 2px solid #3b0764;
+  box-shadow: 0 0 0 3px rgba(164, 14, 228, 0.2);
+}
+
+.timeline-period {
+  font-size: 18px;
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.timeline-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 4px;
+}
+
+.timeline-institution {
+  color: #8257E6;
+  font-size: 20px;
+  margin: 0 0 4px;
+}
+
+.timeline-desc {
+  color: #94a3b8;
+  font-size: 20px;
+  margin: 0;
 }
 
 /* RESPONSIVO */
