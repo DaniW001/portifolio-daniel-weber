@@ -828,3 +828,17 @@ main {
 .contato-button i {
     font-size: 16px;
 }
+
+#formMensagem {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#formMensagem.sucesso {
+    color: #22c55e;
+}
+
+#formMensagem.erro {
+    color: #ef4444;
+}
