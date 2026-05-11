@@ -163,7 +163,8 @@
                     <div class="projects">
                         <div class="carrossel-track-wrapper">
                             <ul class="carrossel-track">
-                                <li onclick="window.open('https://daniw001.github.io/portifolio-daniel-weber/', '_blank')">
+                                <li
+                                    onclick="window.open('https://daniw001.github.io/portifolio-daniel-weber/', '_blank')">
                                     <img src="./images/previa-temporaria.png" alt="Prévia do Projeto"
                                         class="card-preview">
                                     <h3 class="card-title">Nome do Projeto</h3>
@@ -203,13 +204,64 @@
                 </div>
             </section>
             <section id="contato" class="contato">
-                <div>
+                <div class="contato-container">
+                    <div style="padding: 10px;">
+                        <div class="contato-titulo">
+                            <div>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                            <h1>Contato</h1>
+                        </div>
+                        <div class="contato-texto">
+                            <h2>Vamos tranformar ideias em <span>interfaces</span>.</h2>
+                            <p>
+                                Estou sempre aberto a novos projetos, oportunidades e conexões na área de tecnologia. Se
+                                você pensou em algo, um projeto ou quer apenas trocar um papo, vamos conversar!
+                            </p>
+                        </div>
+                    </div>
+                    <div style="width: 90%;">
+                        <div class="contato-card">
+                            <div class="contato-card-header">
+                                <div>
+                                    <h2>Envie uma mensagem</h2>
+                                    <p>
+                                        Preencha o formulário e entrarei em contato o mais rápido possível.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contato-divider"></div>
+                            <form class="contato-form">
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label>Nome</label>
+                                        <input type="text" placeholder="Seu nome">
+                                    </div>
 
+                                    <div class="form-group">
+                                        <label>E-mail</label>
+                                        <input type="email" placeholder="seu@email.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Assunto</label>
+                                    <input type="text" placeholder="Sobre o que deseja falar?">
+                                </div>
+                                <div class="form-group">
+                                    <label>Mensagem</label>
+                                    <textarea placeholder="Conte-me mais sobre seu projeto ou ideia..."></textarea>
+                                </div>
+                                <button type="submit" class="contato-button">
+                                    Enviar mensagem
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
     </main>
     <script type="module" src="js/main.js"></script>
 </body>
-
 </html>
