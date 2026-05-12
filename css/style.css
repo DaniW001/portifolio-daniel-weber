@@ -89,7 +89,6 @@ section[id] {
     min-height: calc(100vh - 72px);
     animation: inicializar .7s forwards;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 60px;
     padding: 60px;
@@ -227,7 +226,7 @@ section[id] {
 
 main {
     background-color: #090912;
-    padding: 40px;
+    padding: 40px 40px 17px 40px;
 }
 
 .container-sections {
@@ -606,58 +605,6 @@ main {
     padding: 10px 0;
 }
 
-/* RESPONSIVO */
-
-@media (max-width: 992px) {
-    .inicial-div img {
-        display: none;
-    }
-
-    /* .inicial-div {
-        background-image: url(/images/sensivel.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    } */
-
-    header {
-        justify-content: space-between;
-        padding: 30px 70px;
-    }
-
-    header .navegacao {
-        display: none;
-    }
-
-    header i {
-        display: block !important;
-        color: #8257E6;
-        font-size: 48px;
-    }
-
-    header .navegacao.ativado {
-        background: linear-gradient(rgba(43, 42, 42, 0.176), rgba(46, 46, 46, 0.724));
-        position: absolute;
-        display: grid;
-        top: 80px;
-        color: white;
-        z-index: 1;
-        padding: 30px;
-        font-weight: bold;
-        border-radius: 0 0 4px 4px;
-        right: 20px;
-        animation: sobeSecao .8s ease-in-out forwards;
-    }
-
-    .sobre img {
-        grid-column: 1/-1;
-        justify-self: center;
-    }
-
-    .sobre-conteudo {
-        grid-column: 1/-1;
-    }
-}
-
 /* ==== SEÇÃO CONTATO ==== */
 
 .contato {
@@ -904,4 +851,47 @@ main {
 
 #formMensagem.erro {
     color: #ef4444;
+}
+
+/* RESPONSIVO */
+
+/* Mobile */
+@media (max-width: 768px) {}
+
+/* Tablet */
+@media (max-width: 1024px) {}
+
+/* Desktop */
+@media (min-width: 1025px) {}
+
+@media (max-width: 992px) {
+
+    header {
+        justify-content: space-between;
+        padding: 30px 70px;
+    }
+
+    header .navegacao {
+        display: none;
+    }
+
+    header i {
+        display: block !important;
+        color: #8257E6;
+        font-size: 48px;
+    }
+
+    header .navegacao.ativado {
+        background: linear-gradient(rgba(43, 42, 42, 0.176), rgba(46, 46, 46, 0.724));
+        position: absolute;
+        display: grid;
+        top: 80px;
+        color: white;
+        z-index: 1;
+        padding: 30px;
+        font-weight: bold;
+        border-radius: 0 0 4px 4px;
+        right: 20px;
+        animation: sobeSecao .8s ease-in-out forwards;
+    }
 }
