@@ -15,6 +15,7 @@ form.addEventListener("submit", function (event) {
 
     const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+    // Verifica se algum campo obrigatório está vazio
     if (
         nomeValor === "" ||
         emailValor === "" ||
@@ -27,6 +28,7 @@ form.addEventListener("submit", function (event) {
         return;
     }
 
+    // Verifica se o e-mail possui formato válido
     if (!emailValido.test(emailValor)) {
         mostrarMensagem(
             "Digite um e-mail válido.",
@@ -35,14 +37,17 @@ form.addEventListener("submit", function (event) {
         return;
     }
 
+    // Exibe mensagem de sucesso
     mostrarMensagem(
         "Mensagem enviada com sucesso!",
         "sucesso"
     );
 
+    // Limpa os campos do formulário após envio
     form.reset();
 });
 
+// Função responsável por exibir mensagens na tela
 function mostrarMensagem(texto, tipo) {
     formMensagem.textContent = texto;
     formMensagem.className = tipo;
