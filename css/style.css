@@ -705,7 +705,7 @@ main {
 
 .status-text {
     color: #E4E4F0;
-    font-size: 0.95rem;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -856,7 +856,131 @@ main {
 /* RESPONSIVO */
 
 /* Mobile */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .inicial-div {
+        padding: 10px;
+    }
+
+    .primeiro-texto {
+        font-size: 23px !important;
+    }
+
+    .inicial-div div h2 {
+        font-size: 26px;
+    }
+
+    .inicial-div div p {
+        font-size: 15px;
+    }
+
+    .btn-cv {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+
+    .inicial-div div {
+        gap: 0px;
+    }
+
+    .inicial-div .acoes {
+        display: grid;
+        gap: 10px;
+    }
+
+    .inicial-div .social-links {
+        gap: 12px;
+    }
+
+    .inicial-div .social-links a {
+        font-size: 32px;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px 10px 17px 10px;
+    }
+
+    .sobre {
+        padding: 5px;
+    }
+
+    .sobre-info {
+        padding: 10px;
+    }
+
+    .sobre-info h3 {
+        font-size: 15px;
+    }
+
+    .sobre-container {
+        grid-template-columns: none;
+    }
+
+    .formacao {
+        padding: 5px;
+    }
+
+    .portfolio {
+        padding: 5px;
+    }
+
+    .portfolio-container {
+        grid-template-columns: none;
+    }
+
+    .contato {
+        padding: 5px;
+    }
+
+    .contato-container {
+        grid-template-columns: none;
+    }
+
+    .contato-texto h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .contato-texto p {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .contato-card {
+        padding: 10px;
+    }
+
+    .contato-card-header h2 {
+        font-size: 18px;
+    }
+
+    .contato-card-header {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .contato-divider {
+        margin-bottom: 12px;
+    }
+
+    .status-badge {
+        padding: 8px 14px;
+        margin-top: 15px;
+    }
+
+    .status-text {
+        font-size: 12px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Tablet */
 @media (max-width: 1024px) {}
@@ -865,11 +989,6 @@ main {
 @media (min-width: 1025px) {}
 
 @media (max-width: 992px) {
-
-    header {
-        justify-content: space-between;
-        padding: 30px 70px;
-    }
 
     header .navegacao {
         display: none;
